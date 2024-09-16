@@ -2112,7 +2112,7 @@ defmodule HTTP1RequestTest do
                       connection_telemetry_span_context: reference(),
                       telemetry_span_context: reference(),
                       conn: struct_like(Plug.Conn, []),
-                      kind: :exit,
+                      kind: :error,
                       exception: %RuntimeError{message: "boom"},
                       stacktrace: list()
                     }}
